@@ -12,6 +12,7 @@ def rmdir(dirPath):
             os.remove(fPath)
         else:
             rmdir(fPath)
+    os.rmdir(dirPath)
 
 def garbageCollector(srcDir, distDir):
     srcList = os.listdir(srcDir)
